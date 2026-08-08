@@ -1,0 +1,93 @@
+/* Contact.css */
+.contact-container {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(34, 49, 63, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: #71d5b9;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Contact Form */
+.contact-form, .contact-info {
+    flex: 1;
+    min-width: 45%;
+    background-color: #2b6777;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #52ab98;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #418a79;
+}
+
+/* Contact Info */
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #eee;
+}
+
+.map-container {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    border: 0;
+}

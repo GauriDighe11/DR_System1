@@ -1,0 +1,59 @@
+/* AdminDashboard.css */
+
+.admin-dashboard {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.predictions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.prediction-card {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.prediction-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.prediction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.more-btn {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}

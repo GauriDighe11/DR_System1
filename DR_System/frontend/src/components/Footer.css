@@ -1,0 +1,56 @@
+/* Color Palette */
+:root {
+    --dark-teal: #2b6777;
+    --light-blue: #c8d8e4;
+    --white: #ffffff;
+    --light-gray: #f2f2f2;
+    --green-teal: #52ab98;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--dark-teal);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+   bottom: 0;
+    margin-top: auto; 
+    
+    background-color: var(--dark-teal);
+  
+  position: relative; 
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--green-teal);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

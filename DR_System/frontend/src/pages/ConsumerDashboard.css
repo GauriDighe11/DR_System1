@@ -1,0 +1,348 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.consumer-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Historical Data Table */
+.historical-data {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.historical-data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.historical-data th,
+.historical-data td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.historical-data th {
+    background-color: #2c3e50;
+    color: #fff;
+    font-weight: 600;
+}
+
+.historical-data tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Alerts Section */
+.alerts {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.alert-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 5px solid #3498db;
+    transition: transform 0.2s ease;
+}
+
+.alert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert-content p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.peak-yes {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.peak-no {
+    color: #2ecc71;
+    font-weight: 600;
+}
+
+/* Consumer Query Section */
+.consumer-query {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.consumer-query textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.consumer-query button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.consumer-query button:hover {
+    background-color: #2980b9;
+}
+
+.submitted-queries {
+    margin-top: 20px;
+}
+
+.submitted-queries h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.submitted-queries ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.submitted-queries li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border-left: 3px solid #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .historical-data th,
+    .historical-data td {
+        padding: 8px;
+    }
+
+    .alert-card {
+        padding: 10px;
+    }
+
+    .consumer-query textarea {
+        font-size: 0.9rem;
+    }
+
+    .consumer-query button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Consumer Queries Section */
+.consumer-queries {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.query-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.queries-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.query-card {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #4e73df;
+}
+
+.query-card.unread {
+    border-left-color: #f6c23e;
+    background-color: #fffbf2;
+}
+
+.query-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.consumer-info {
+    font-weight: bold;
+    color: #2e59d9;
+}
+
+.query-time {
+    color: #6c757d;
+    font-size: 0.8rem;
+}
+
+.query-content {
+    padding: 0.5rem 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+.query-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.status-badge.unread {
+    background-color: #f6c23e;
+    color: #fff;
+}
+
+.status-badge.read {
+    background-color: #1cc88a;
+    color: #fff;
+}
+
+.no-queries {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+    font-style: italic;
+}
+.submitted-queries {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.submitted-queries ul {
+    list-style: none;
+    padding: 0;
+}
+
+.submitted-queries li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.submitted-queries small {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+button[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Alert Cards Styling */
+
+
+.alert-content {
+    color: #333333; /* Dark text color for all alert content */
+}
+
+.alert-content p {
+    margin: 8px 0;
+    color: inherit; 
+}
+
+.alert-content strong {
+    color: #2c3e50; /* Slightly darker for emphasis */
+    font-weight: 600;
+}
+
+.time, .demand, .price, .peak-hour {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Delete Prediction Button */
+.delete-prediction-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.delete-prediction-btn:hover {
+    background-color: #e63946;
+}
+
+/* Alert Card Adjustments */
+.alert-card {
+    position: relative;
+    padding-bottom: 40px; 
+}
+
+.alert-actions {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
